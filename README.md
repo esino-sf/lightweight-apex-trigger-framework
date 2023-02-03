@@ -13,6 +13,8 @@ This project documents a concrete implementation of a light-weight version of th
     The classes `OpportunityTrigger2`, `OpportunityTriggerHandler2`, and so on, are for illustrative purposes only.
 
     Furthermore, the `OpportunityTriggerHandler2Test` class was introduced just as a starting point for properly configured & healthy unit tests.
+
+    The postfix `2` has been added to facilitate a potential installation on a target org where there could already be an OpportunityTrigger/Handler/Test and so on.
 ## Installation
 
 TBD
