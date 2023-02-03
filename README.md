@@ -1,18 +1,17 @@
-# Salesforce DX Project: Next Steps
+# Description
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project documents a concrete implementation of a light-weight version of the FFLIB Trigger Framework, based on the [Apex Enterprise Pattern Github](https://github.com/apex-enterprise-patterns) workspace.
 
-## How Do You Plan to Deploy Your Changes?
+## Components
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- `SObjbectDomain`: base `virtual` class that constitutes what logics should be run in the particular trigger events, and more importantly: ensures that those key 'logics' methods are called in the right order and timing(_see the `triggerHandler()` method_).
+- `OpportunityTrigger2` & `OpportunityTriggerHandler2` is a demonstration-only purpose example implementation of such a framework, illustrating how an actual implementation could look like:
+  - Highlights: the application of the `onApplyDefaults()` and `onValidate()` methods illustrates some core advantages of such a framework that provides ease in extensibility and maintenance.
 
-## Configure Your Salesforce DX Project
+## Installation
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+TBD
 
-## Read All About It
+## License
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+The MIT License (MIT).
