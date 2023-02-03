@@ -8,6 +8,11 @@ This project documents a concrete implementation of a light-weight version of th
 - `OpportunityTrigger2` & `OpportunityTriggerHandler2` is a demonstration-only purpose example implementation of such a framework, illustrating how an actual implementation could look like:
   - Highlights: the application of the `onApplyDefaults()` and `onValidate()` methods illustrates some core advantages of such a framework that provides ease in extensibility and maintenance.
 
+### Notes
+
+    The classes `OpportunityTrigger2`, `OpportunityTriggerHandler2`, and so on, are for illustrative purposes only.
+
+    Furthermore, the `OpportunityTriggerHandler2Test` class was introduced just as a starting point for properly configured & healthy unit tests.
 ## Installation
 
 TBD
